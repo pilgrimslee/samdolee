@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>삼돌이창호공사 - 고품질 창호 전문업체</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0066cc',secondary:'#4d94ff'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Noto Sans KR', sans-serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=modern%2520window%2520installation%2520with%2520professional%2520workers%2520in%2520blue%2520uniforms%252C%2520high-quality%2520window%2520frames%252C%2520clean%2520and%2520bright%2520environment%252C%2520professional%2520photography%252C%2520soft%2520lighting%252C%2520blue%2520sky%2520background&width=1200&height=600&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+input:focus, button:focus {
+outline: none;
+}
+.custom-switch {
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+}
+.custom-switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: .4s;
+border-radius: 34px;
+}
+.slider:before {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider {
+background-color: #0066cc;
+}
+input:checked + .slider:before {
+transform: translateX(26px);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- 헤더 -->
+<header class="sticky top-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-4 py-3">
+<div class="flex justify-between items-center">
+<div class="flex items-center">
+<a href="/" class="text-2xl font-['Pacifico'] text-primary">삼돌이창호공사</a>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a href="https://readdy.ai/home/e455da29-7005-4dba-bfa6-c14e66ec259e/6bb12eee-a657-4f9a-b94b-735b0d90d415" data-readdy="true" class="text-gray-700 hover:text-primary font-medium transition-colors whitespace-nowrap">회사소개</a>
+<a href="https://readdy.ai/home/e455da29-7005-4dba-bfa6-c14e66ec259e/70471396-553a-4f5b-ad11-22085e2aa232" data-readdy="true" class="text-gray-700 hover:text-primary font-medium transition-colors whitespace-nowrap">제품소개</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors whitespace-nowrap">시공사례</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium transition-colors whitespace-nowrap">고객센터</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a href="tel:055-252-8777" class="hidden md:flex items-center text-gray-700">
+<div class="w-8 h-8 flex items-center justify-center mr-1">
+<i class="ri-phone-line"></i>
+</div>
+<span>055-252-8777</span>
+</a>
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">견적문의</button>
+<div class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-gray-700 text-2xl"></i>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- 메인 비주얼 -->
+<section class="hero-section relative">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<div class="container mx-auto px-4 py-20 md:py-32 relative z-10">
+<div class="max-w-2xl">
+<h1 class="text-3xl md:text-5xl font-bold text-white mb-6">최고의 품질로 만드는<br>삼돌이창호공사</h1>
+<p class="text-white text-lg mb-8">30년 경력을 바탕으로 고객님과 직접 상담 후 맞춤형 진행되어도 견적 줄여드립니다!</p>
+<div class="flex flex-wrap gap-4">
+<button id="estimate-btn" class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">무료 견적 상담</button>
+<a href="https://readdy.ai/home/e455da29-7005-4dba-bfa6-c14e66ec259e/3fc0df3a-561c-4c77-83bb-ec11261972ce" data-readdy="true" class="inline-block bg-white text-primary px-6 py-3 !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">시공사례 보기</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 서비스 소개 -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">삼돌이창호공사 서비스</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">제조와 시공, 품질 보증까지 한번에 해결해 드립니다.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4 mx-auto">
+<i class="ri-tools-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-center mb-3">전문 시공</h3>
+<p class="text-gray-600 text-center">30년 경력을 바탕으로 고객님과 직접 상담 후 맞춤형 진행되어도 견적 줄여드립니다!</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4 mx-auto">
+<i class="ri-shield-check-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-center mb-3">품질 보증</h3>
+<p class="text-gray-600 text-center">모든 제품은 엄격한 품질 관리를 통해 생산되며, 고객님의 만족을 최우선으로 생각합니다.</p>
+</div>
+<div class="bg-white p-6 rounded shadow-md hover:shadow-lg transition-shadow">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4 mx-auto">
+<i class="ri-customer-service-2-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold text-center mb-3">신속한 A/S</h3>
+<p class="text-gray-600 text-center">문제 발생시 즉시 소비자 진단하여 수 있도록합니다. 30년 경력을 바탕으로 최고의 서비스를 제공합니다.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 수상 내역 -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=korean%2520business%2520award%2520trophy%2520with%2520blue%2520background%252C%2520professional%2520photography%252C%2520clean%2520design%252C%2520award%2520ceremony%252C%2520high%2520quality%2520image&width=600&height=400&seq=2&orientation=landscape" alt="2022 한국소비자 베스트브랜드대상 1위" class="w-full h-auto rounded object-cover">
+</div>
+<div class="md:w-1/2">
+<h2 class="text-3xl font-bold mb-6">2022 한국소비자<br>베스트브랜드대상 1위</h2>
+<p class="text-gray-600 mb-6">삼돌이창호공사는 제조와 기반 공장 운영, 시공, 서비스 및 관리체계 제공까지 가능합니다. 업력 5년 이상 업계 탑카테고리 일반건축에서 자체제조시설자로 인재 계속시켜서 있다고 합니다.</p>
+<p class="text-gray-600 mb-6">품질과 서비스 모두 고객님의 만족을 위해 최선을 다하고 있습니다.</p>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4">
+<i class="ri-award-line text-primary text-2xl"></i>
+</div>
+<div>
+<h4 class="font-semibold">고객 만족도 1위</h4>
+<p class="text-gray-600">소비자가 직접 선정한 최고의 브랜드</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 자주 묻는 질문 -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">자주 묻는 질문</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">고객님들이 자주 물어보시는 질문들을 모았습니다.</p>
+</div>
+<div class="max-w-3xl mx-auto">
+<div class="mb-6 bg-white p-6 rounded shadow-sm">
+<h3 class="text-lg font-semibold mb-2">Q. 시공스케 시작하기 전 어떤 절차로 진행하나요?</h3>
+<p class="text-gray-600">간단하세요. 고객님과 직접 상담 후 맞춤형 진단하여 딱 맞는 제품하도록합니다!</p>
+</div>
+<div class="mb-6 bg-white p-6 rounded shadow-sm">
+<h3 class="text-lg font-semibold mb-2">Q. 어떤 서비스를 전문적으로 제공하나요?</h3>
+<p class="text-gray-600">창호는 진단하여 상담, 창호 및 도배, 강화유리 등 진단하여와 콘텐츠 모든 서비스를 진행합니다.</p>
+</div>
+<div class="mb-6 bg-white p-6 rounded shadow-sm">
+<h3 class="text-lg font-semibold mb-2">Q. 서비스의 견적은 어떤 방식으로 산정 되나요?</h3>
+<p class="text-gray-600">고객님과 직접 상담 후 맞춤형으로 견적을 산정합니다!</p>
+</div>
+<div class="bg-white p-6 rounded shadow-sm">
+<h3 class="text-lg font-semibold mb-2">Q. 문트한 서비스 중 대표적인 서비스는 무엇인가요? 소요 시간은 얼마나 소요됩니까?</h3>
+<p class="text-gray-600">문트하건 창호 소비자 진단하여 수 있도록합니다. 30년 경력을 바탕으로 최고의 서비스를 제공합니다.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 시공사례 -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">시공사례</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">삼돌이창호공사의 다양한 시공사례를 확인해보세요.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="overflow-hidden rounded shadow-md group">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=modern%2520window%2520installation%2520in%2520living%2520room%252C%2520bright%2520and%2520clean%2520environment%252C%2520large%2520windows%2520with%2520blue%2520frames%252C%2520professional%2520photography%252C%2520high%2520quality%2520image&width=400&height=300&seq=3&orientation=landscape" alt="주택 창호 시공" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+</div>
+<div class="p-4">
+<h3 class="font-semibold mb-2">창원시 의창구 주택 창호 시공</h3>
+<p class="text-gray-600 text-sm">고급 단열창 설치로 에너지 효율성 향상</p>
+</div>
+</div>
+<div class="overflow-hidden rounded shadow-md group">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=commercial%2520building%2520with%2520large%2520glass%2520windows%252C%2520blue%2520tinted%2520glass%252C%2520modern%2520architecture%252C%2520professional%2520photography%252C%2520clean%2520design%252C%2520high%2520quality%2520image&width=400&height=300&seq=4&orientation=landscape" alt="상업시설 창호 시공" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+</div>
+<div class="p-4">
+<h3 class="font-semibold mb-2">김해시 상업시설 창호 시공</h3>
+<p class="text-gray-600 text-sm">대형 유리창 설치로 개방감 극대화</p>
+</div>
+</div>
+<div class="overflow-hidden rounded shadow-md group">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=apartment%2520balcony%2520with%2520new%2520sliding%2520doors%252C%2520blue%2520frames%252C%2520clean%2520installation%252C%2520modern%2520design%252C%2520professional%2520photography%252C%2520high%2520quality%2520image&width=400&height=300&seq=5&orientation=landscape" alt="아파트 발코니 확장" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+</div>
+<div class="p-4">
+<h3 class="font-semibold mb-2">창원시 아파트 발코니 확장</h3>
+<p class="text-gray-600 text-sm">단열 성능이 우수한 이중창 설치</p>
+</div>
+</div>
+</div>
+<div class="text-center mt-8">
+<button class="bg-primary text-white px-6 py-3 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">더 많은 시공사례 보기</button>
+</div>
+</div>
+</section>
+<!-- 견적 문의 -->
+<section class="py-16 bg-primary bg-opacity-10">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-bold mb-4">무료 견적 문의</h2>
+<p class="text-gray-600">아래 양식을 작성하시면 빠르게 연락드리겠습니다.</p>
+</div>
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">이름</label>
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="이름을 입력하세요">
+</div>
+<div>
+<label for="phone" class="block text-gray-700 mb-2">연락처</label>
+<input type="text" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="연락처를 입력하세요">
+</div>
+</div>
+<div class="mb-6">
+<label for="address" class="block text-gray-700 mb-2">주소</label>
+<input type="text" id="address" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="주소를 입력하세요">
+</div>
+<div class="mb-6">
+<label for="service" class="block text-gray-700 mb-2">문의 서비스</label>
+<div class="relative">
+<select id="service" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:border-primary pr-8">
+<option value="">서비스를 선택하세요</option>
+<option value="창호 설치">창호 설치</option>
+<option value="발코니 확장">발코니 확장</option>
+<option value="유리 교체">유리 교체</option>
+<option value="기타">기타</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none w-4 h-4 flex items-center justify-center">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 mb-2">문의 내용</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="문의 내용을 입력하세요"></textarea>
+</div>
+<div class="mb-6 flex items-center">
+<label class="custom-switch mr-3">
+<input type="checkbox" checked>
+<span class="slider"></span>
+</label>
+<span class="text-gray-700">개인정보 수집 및 이용에 동의합니다.</span>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">견적 문의하기</button>
+</form>
+</div>
+</div>
+</section>
+<!-- 회사 정보 -->
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<h2 class="text-2xl font-bold mb-6">기본정보</h2>
+<div class="space-y-4">
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">대표자</div>
+<div>손영순</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">사업자번호</div>
+<div>238-53-00616</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">우편번호</div>
+<div>51126</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">회사주소</div>
+<div>경상남도 창원시 의창구 대산면 가술산로12번길 19-8</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">전화번호</div>
+<div>055-252-8777</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-bold mb-6">사업정보</h2>
+<div class="space-y-4">
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">사업유형</div>
+<div>과세사업자</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">업태</div>
+<div>제조, 시공</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">종목</div>
+<div>창호, 유리</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">세금계산서</div>
+<div>발행 가능</div>
+</div>
+<div class="flex border-b border-gray-200 pb-3">
+<div class="w-32 font-medium text-gray-700">통신판매번호</div>
+<div>제2020-경남창원-0123호</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 지도 -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">오시는 길</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">삼돌이창호공사를 방문하시는 방법을 안내해드립니다.</p>
+</div>
+<div class="relative h-96 rounded overflow-hidden shadow-md">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');"></div>
+</div>
+<div class="max-w-3xl mx-auto mt-8 bg-white p-6 rounded shadow-sm">
+<div class="flex items-start mb-4">
+<div class="w-8 h-8 flex items-center justify-center mr-3 mt-1">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-1">주소</h3>
+<p class="text-gray-600">경상남도 창원시 의창구 대산면 가술산로12번길 19-8</p>
+</div>
+</div>
+<div class="flex items-start mb-4">
+<div class="w-8 h-8 flex items-center justify-center mr-3 mt-1">
+<i class="ri-bus-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-1">대중교통</h3>
+<p class="text-gray-600">창원시내버스 123번, 456번 이용 후 대산면사무소 하차 (도보 5분)</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-8 h-8 flex items-center justify-center mr-3 mt-1">
+<i class="ri-car-line text-primary"></i>
+</div>
+<div>
+<h3 class="font-semibold mb-1">자가용</h3>
+<p class="text-gray-600">남해고속도로 창원IC에서 15분 거리</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 푸터 -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<a href="/" class="text-xl font-['Pacifico'] mb-4 block">삼돌이창호공사</a>
+<p class="text-gray-400 mb-4">30년 경력을 바탕으로 고객님과 직접 상담 후 맞춤형 진행되어도 견적 줄여드립니다!</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+<i class="ri-kakao-talk-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">서비스</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">창호 설치</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">발코니 확장</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">유리 교체</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">단열 시공</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">회사 정보</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">회사 소개</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">시공 사례</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">인증 및 수상</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">채용 정보</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-4">고객 지원</h3>
+<ul class="space-y-2">
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span>055-252-8777</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<span>info@samdoli.co.kr</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-time-line"></i>
+</div>
+<span>평일 09:00 - 18:00</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-map-pin-line"></i>
+</div>
+<span>경상남도 창원시 의창구</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+<p>© 2025 삼돌이창호공사. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- 견적 문의 모달 -->
+<div id="estimate-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+<div class="bg-white w-full max-w-xl p-8 rounded-lg shadow-xl mx-4">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-2xl font-bold">무료 견적 문의</h3>
+<button id="close-modal" class="w-8 h-8 flex items-center justify-center">
+<i class="ri-close-line text-2xl"></i>
+</button>
+</div>
+<form id="modal-estimate-form">
+<div class="space-y-4">
+<div>
+<label for="modal-name" class="block text-gray-700 mb-2">이름</label>
+<input type="text" id="modal-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="이름을 입력하세요" required>
+</div>
+<div>
+<label for="modal-phone" class="block text-gray-700 mb-2">연락처</label>
+<input type="tel" id="modal-phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="연락처를 입력하세요" required>
+</div>
+<div>
+<label for="modal-address" class="block text-gray-700 mb-2">주소</label>
+<input type="text" id="modal-address" name="address" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="주소를 입력하세요" required>
+</div>
+<div>
+<label for="modal-service" class="block text-gray-700 mb-2">문의 서비스</label>
+<div class="relative">
+<select id="modal-service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:border-primary pr-8" required>
+<option value="">서비스를 선택하세요</option>
+<option value="창호 설치">창호 설치</option>
+<option value="발코니 확장">발코니 확장</option>
+<option value="유리 교체">유리 교체</option>
+<option value="기타">기타</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none w-4 h-4 flex items-center justify-center">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div>
+<label for="modal-message" class="block text-gray-700 mb-2">문의 내용</label>
+<textarea id="modal-message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="문의 내용을 입력하세요" required></textarea>
+</div>
+<div class="flex items-center">
+<label class="custom-switch mr-3">
+<input type="checkbox" id="modal-privacy" required>
+<span class="slider"></span>
+</label>
+<span class="text-gray-700">개인정보 수집 및 이용에 동의합니다.</span>
+</div>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-3 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap mt-6">견적 문의하기</button>
+</form>
+</div>
+</div>
+<!-- 모바일 메뉴 -->
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('.ri-menu-line');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 hidden';
+mobileMenu.innerHTML = `
+<div class="bg-white h-full w-4/5 max-w-xs p-5 transform transition-transform -translate-x-full">
+<div class="flex justify-between items-center mb-6">
+<a href="/" class="text-xl font-['Pacifico'] text-primary">삼돌이창호공사</a>
+<div class="w-8 h-8 flex items-center justify-center cursor-pointer close-menu">
+<i class="ri-close-line text-gray-700 text-2xl"></i>
+</div>
+</div>
+<nav class="space-y-4">
+<a href="https://readdy.ai/home/e455da29-7005-4dba-bfa6-c14e66ec259e/6bb12eee-a657-4f9a-b94b-735b0d90d415" data-readdy="true" class="block py-2 text-gray-700 hover:text-primary font-medium border-b border-gray-100">회사소개</a>
+<a href="https://readdy.ai/home/e455da29-7005-4dba-bfa6-c14e66ec259e/70471396-553a-4f5b-ad11-22085e2aa232" data-readdy="true" class="block py-2 text-gray-700 hover:text-primary font-medium border-b border-gray-100">제품소개</a>
+<a href="#" class="block py-2 text-gray-700 hover:text-primary font-medium border-b border-gray-100">시공사례</a>
+<a href="#" class="block py-2 text-gray-700 hover:text-primary font-medium border-b border-gray-100">고객센터</a>
+</nav>
+<div class="mt-6">
+<a href="tel:055-252-8777" class="flex items-center text-gray-700 mb-4">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span>055-252-8777</span>
+</a>
+<button class="w-full bg-primary text-white px-4 py-2 !rounded-button hover:bg-blue-700 transition-colors whitespace-nowrap">견적문의</button>
+</div>
+</div>
+`;
+document.body.appendChild(mobileMenu);
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.remove('hidden');
+const menuPanel = mobileMenu.querySelector('div');
+setTimeout(() => {
+menuPanel.classList.remove('-translate-x-full');
+}, 10);
+});
+mobileMenu.addEventListener('click', function(e) {
+if (e.target === mobileMenu || e.target.closest('.close-menu')) {
+const menuPanel = mobileMenu.querySelector('div');
+menuPanel.classList.add('-translate-x-full');
+setTimeout(() => {
+mobileMenu.classList.add('hidden');
+}, 300);
+}
+});
+});
+</script>
+<!-- 견적 문의 폼 스크립트 -->
+<script id="contact-form-script">
+document.addEventListener('DOMContentLoaded', function() {
+const form = document.querySelector('form:not(#modal-estimate-form)');
+if (form) {
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+// 간단한 유효성 검사
+const name = document.getElementById('name').value;
+const phone = document.getElementById('phone').value;
+if (!name || !phone) {
+alert('이름과 연락처를 입력해주세요.');
+return;
+}
+// 여기에 폼 제출 로직 추가
+alert('견적 문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.');
+form.reset();
+});
+}
+});
+</script>
+<!-- 견적 문의 스크립트 -->
+<script id="estimate-script">
+document.addEventListener('DOMContentLoaded', function() {
+const estimateBtn = document.getElementById('estimate-btn');
+const modal = document.getElementById('estimate-modal');
+const closeModal = document.getElementById('close-modal');
+const modalForm = document.getElementById('modal-estimate-form');
+function showModal() {
+modal.classList.remove('hidden');
+document.body.style.overflow = 'hidden';
+}
+function hideModal() {
+modal.classList.add('hidden');
+document.body.style.overflow = '';
+}
+estimateBtn.addEventListener('click', function(e) {
+e.preventDefault();
+const estimateSection = document.getElementById('modal-estimate-form');
+if (window.innerWidth < 768) {
+showModal();
+} else {
+const section = document.querySelector('section.py-16.bg-primary.bg-opacity-10');
+if (section) {
+section.scrollIntoView({ behavior: 'smooth' });
+}
+}
+});
+modal.addEventListener('click', function(e) {
+if (e.target === modal) {
+hideModal();
+}
+});
+closeModal.addEventListener('click', hideModal);
+modalForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(modalForm);
+const data = Object.fromEntries(formData);
+if (!data.name || !data.phone || !data.address || !data.service || !data.message) {
+const notification = document.createElement('div');
+notification.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded shadow-lg z-50';
+notification.textContent = '모든 필드를 입력해주세요.';
+document.body.appendChild(notification);
+setTimeout(() => notification.remove(), 3000);
+return;
+}
+const notification = document.createElement('div');
+notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg z-50';
+notification.textContent = '견적 문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.';
+document.body.appendChild(notification);
+modalForm.reset();
+hideModal();
+setTimeout(() => notification.remove(), 3000);
+});
+});
+</script>
+</body>
+</html>
